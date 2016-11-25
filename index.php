@@ -15,7 +15,7 @@
     </head>
     <body>
     <script language="Javascript">
-        DemoData(){
+        function DemoData(){
            json = jQuery.getJSON("https://api.ouraring.com/v1/activity?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB");
            alert(json);
         }
