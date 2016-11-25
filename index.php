@@ -218,7 +218,7 @@
 <?php
 $json = file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB');
 $obj = json_decode($json);
-echo $obj->activity;
+print_r($obj->activity);
 ?>
                     </p>
                     <ul class="actions">
