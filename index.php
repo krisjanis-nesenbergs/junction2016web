@@ -14,14 +14,19 @@
         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     </head>
     <body>
-
+    <script language="Javascript">
+        DemoData(){
+           json = jQuery.getJSON("https://api.ouraring.com/v1/activity?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB");
+           alert(json);
+        }
+    </script>
         <!-- Header -->
             <div id="header">
                 <span class="logo icon fa-paper-plane-o"></span>
-                <h1>Hi. This is Directive.</h1>
-                <p>A responsive HTML5 + CSS3 site template designed by <a href="http://html5up.net">HTML5 UP</a>
+                <h1>Sleep = Productivity</h1>
+                <p>Increase the productivity, health and happiness of Your employees.
                 <br />
-                and released for free under the <a href="http://html5up.net/license">Creative Commons license</a>.</p>
+                No more unproductive working hours after a busy night!</p>
             </div>
 
         <!-- Main -->
@@ -216,7 +221,7 @@
                     <h3>Get shady with science</h3>
                     <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
                     <ul class="actions">
-                        <li><a href="#" class="button">Join our crew</a></li>
+                        <li><a href="#" class="button" onclick="DemoData();">Get data</a></li>
                     </ul>
                 </footer>
 
