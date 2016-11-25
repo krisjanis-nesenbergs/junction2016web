@@ -14,13 +14,6 @@
         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     </head>
     <body>
-    <script language="Javascript">
-        function DemoData(){
-           json = $.getJSON("https://api.ouraring.com/v1/activity?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB", function( data ) {
-              alert(data);
-           });
-        }
-    </script>
         <!-- Header -->
             <div id="header">
                 <span class="logo icon fa-paper-plane-o"></span>
@@ -221,6 +214,13 @@
                 <footer class="major container 75%">
                     <h3>Get shady with science</h3>
                     <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+                    <p>
+<?php
+$json = file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB');
+$obj = json_decode($json);
+echo $obj->activity;
+?>
+                    </p>
                     <ul class="actions">
                         <li><a href="#" class="button" onclick="DemoData();">Get data</a></li>
                     </ul>
