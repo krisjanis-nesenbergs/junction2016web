@@ -17,17 +17,29 @@ $json = file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
         <script language="javascript">
         <?php
-            $token = "CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB";
+            $empl = 0;
+            $token = "OLF43KDW6KIJZQUIQYR6H3YL3L6WF5QB";
+            if(isset($_GET['employee']) && !empty($_GET['employee'])){
+                $empl = a_to_i($_GET['employee']);
+            }
+            switch($empl){
+                case 1:
+                    $token = "C6Q7SYJDDCTQW4DZ2OC6CKWFMIU3LQ7V";
+                    break;
+                case 2:
+                    $token = "CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB";
+                    break;
+            }
         ?>
             var data = {
                 sleep:<?php
-                    echo(file_get_contents('https://api.ouraring.com/v1/sleep?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB'));
+                    echo(file_get_contents('https://api.ouraring.com/v1/sleep?access_token='.$token));
                 ?>,
                 activity:<?php
-                    echo(file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB'));
+                    echo(file_get_contents('https://api.ouraring.com/v1/activity?access_token='.$token));
                 ?>,
                 readiness:<?php
-                    echo(file_get_contents('https://api.ouraring.com/v1/readiness?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB'));
+                    echo(file_get_contents('https://api.ouraring.com/v1/readiness?access_token='.$token));
                 ?>
             }
             
@@ -56,9 +68,9 @@ $json = file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7
                     etiam vivamus nunc nibh morbi.</p>
                     -->
                     <ul>
-                    <li><a href = "index.html?employee=1#graph">Employee: Richards</a></li>
-                    <li><a href = "index.html?employee=2#graph">Employee: Krisjanis</a></li>
-                    <li><a href = "index.html?employee=3#graph">Employee: Test employee</a></li>
+                    <li><a href = "index.php?employee=1#graph" <?php ($emph==1?echo("style='color=red'"):echo("")) ?>>Employee: Richards</a></li>
+                    <li><a href = "index.php?employee=2#graph">Employee: Krisjanis</a></li>
+                    <li><a href = "index.php?employee=0#graph">Employee: Test employee</a></li>
                     </ul>
                 </header>
 
