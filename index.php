@@ -132,10 +132,10 @@
                         </div>
                     </section>
                     <section class="feature left">
-                        <a href="#" class="image icon fa-mobile"><img src="images/pic03.jpg" alt="" /></a>
+                        <a href="#" class="image icon fa-mobile"><img src="images/pic03.png" alt="" /></a>
                         <div class="content">
-                            <h3>The Third Thing</h3>
-                            <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+                            <h3>Regulating productivity</h3>
+                            <p>If You are feeling fresh in the morning - great! If not - Your smart <a href="http://www.pauligshop.fi/fi_fi/paulig-muki">Paulig Muki</a> coffe mug will tell You how much coffee and excercise You need. If You require more sleep, then the workplace lights will dim, music will soothe You, and You will sip Your coffee and slip into a rejuvinating powernap. Everyone knows what a boost to productivity that is!</p>
                         </div>
                     </section>
                 </div>
@@ -290,12 +290,12 @@
                 -->
 
                 <footer class="major container 75%">
-                    <h3>Get shady with science</h3>
-                    <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+                    <h3>Make Your employees sleep!</h3>
+                    <p>The <img src="images/zzzyield2.png" style="width:40px"/> service tracks the sleep, activity and resulting productivity of Your employees. The smart enviroment will track them and adapt to their needs. Wake them up when needed, and put them to sleep if productivity suffers. Even their coffe consumption will be regulated for the most productive, healthy and envigorating experience.</p>
                     <p>
                     </p>
                     <ul class="actions">
-                        <li><a href="#" class="button" onclick="DemoData();">Get data</a></li>
+                        <li><a href="#conteact" class="button">Organize a Free demonstration!</a></li>
                     </ul>
                 </footer>
 
@@ -304,13 +304,12 @@
         <!-- Footer -->
             <div id="footer">
                 <div class="container 75%">
-
+                    <a name="contact"/>
                     <header class="major last">
-                        <h2>Questions or comments?</h2>
+                        <h2>Contact us:</h2>
                     </header>
 
-                    <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
-                    orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+                    <p>If You have any questions or want to organize a free demonstration of our technology please fill in the form below.</p>
 
                     <form method="post" action="#">
                         <div class="row">
@@ -344,7 +343,7 @@
                     </ul>
 
                     <ul class="copyright">
-                        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        <li>&copy; <img src="images/zzzyield2png" style="size:40px;"/>. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     </ul>
 
                 </div>
