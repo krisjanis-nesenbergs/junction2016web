@@ -7,9 +7,9 @@ $password = preg_replace("/^.*Password=(.+?)$/", "\\1", $svalue);
 
 $username = "zzz";
 $password = "yield";
-$dname = "state";
+$dbname = "state";
 
-$conn = new mysqli($servername, $dbname, $username, $password);
+$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
