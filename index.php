@@ -18,7 +18,6 @@
         <?php
             $empl = 0;
             $stat = -1;
-            $
             $token = "OLF43KDW6KIJZQUIQYR6H3YL3L6WF5QB";
             if(isset($_GET['employee']) && !empty($_GET['employee'])){
                 $empl = intval($_GET['employee']);
