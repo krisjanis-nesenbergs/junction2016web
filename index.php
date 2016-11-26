@@ -17,9 +17,14 @@
         <script language="javascript">
         <?php
             $empl = 0;
+            $stat = -1;
+            $
             $token = "OLF43KDW6KIJZQUIQYR6H3YL3L6WF5QB";
             if(isset($_GET['employee']) && !empty($_GET['employee'])){
                 $empl = intval($_GET['employee']);
+            }
+            if(isset($_GET['get']) && !empty($_GET['state'])){
+                $stat = intval($_GET['state']);
             }
             switch($empl){
                 case 1:
@@ -43,6 +48,15 @@
 
             $sql = "UPDATE state SET user=".$empl;
             $result = $conn->query($sql);
+            if($stat>-1){
+                if($stat<5){
+                    $sql = "UPDATE state SET s1=".$stat;
+                } else {
+                    $stat2 = $stat-5;
+                    $sql = "UPDATE state SET s2=".$stat2;
+                }
+                $result = $conn->query($sql);
+            }
             $conn->close();
 
 
@@ -84,10 +98,11 @@
                     etiam vivamus nunc nibh morbi.</p>
                     -->
                     <ul>
-                    <li><a href = "index.php?employee=1#graph" <?php ($empl==1?"style='color=red'":"") ?>>Employee: Richards</a></li>
-                    <li><a href = "index.php?employee=2#graph" <?php ($empl==2?"style='color=red'":"") ?>>Employee: Krisjanis</a></li>
-                    <li><a href = "index.php?employee=0#graph" <?php ($empl==0?"style='color=red'":"") ?>>Employee: Test employee</a></li>
+                    <li><a href = "index.php?employee=1#graph" <?php echo($empl==1?"style='background-color=red'":"") ?>>Employee: Richards</a></li>
+                    <li><a href = "index.php?employee=2#graph" <?php echo($empl==2?"style='background-color=red'":"") ?>>Employee: Krisjanis</a></li>
+                    <li><a href = "index.php?employee=0#graph" <?php echo($empl==0?"style='background-color=red'":"") ?>>Employee: Test employee</a></li>
                     </ul>
+                    <span><a href = "index.php?state=0#graph">S1</a> <a href = "index.php?state=1#graph">S2</a></span>
                 </header>
 
                 <div class="box alt container">
