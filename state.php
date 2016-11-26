@@ -5,7 +5,9 @@ $dbname = preg_replace("/^.*Database=(.+?);.*$/", "\\1", $svalue);
 $username = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $svalue);
 $password = preg_replace("/^.*Password=(.+?)$/", "\\1", $svalue);
 
-
+$username = "zzz";
+$password = "yield";
+$dname = "state"
 file_put_contents('filename.php', 0);
 $conn = new mysqli($servername, $dbname, $username, $password);
 // Check connection
