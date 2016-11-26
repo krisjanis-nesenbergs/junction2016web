@@ -48,16 +48,8 @@
 
             $sql = "UPDATE state SET user=".$empl;
             $result = $conn->query($sql);
-            if($stat>-1){
-                if($stat<5){
-                    $sql = "UPDATE state SET s1=".$stat;
-                } else {
-                    $stat2 = $stat-5;
-                    $sql = "UPDATE state SET s2=".$stat2;
-                }
-                $result = $conn->query($sql);
-            }
-            $conn->close();
+            
+
 
 
         ?>
