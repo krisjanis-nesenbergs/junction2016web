@@ -87,7 +87,7 @@
     <body onload="ZZZYield.init(data)">
         <!-- Header -->
             <div id="header">
-                <span class="logo icon fa-paper-plane-o"><img src="test.jpg" /></span>
+                <span class="logo icon fa-paper-plane-o"><span style="margin-left:-2px;"><img src="images/zzzyield.png" style="margin-top:8px;width:100px"/></span></span>
                 <h1>Sleep = Productivity</h1>
                 <p>Increase the productivity, health and happiness of Your employees.
                 <br />
