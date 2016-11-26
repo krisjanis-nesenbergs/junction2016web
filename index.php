@@ -98,11 +98,13 @@
                     etiam vivamus nunc nibh morbi.</p>
                     -->
                     <ul>
-                    <li><a href = "index.php?employee=1#graph" <?php echo($empl==1?"style='background-color:red'":"") ?>>Employee: Richards</a></li>
-                    <li><a href = "index.php?employee=2#graph" <?php echo($empl==2?"style='background-color:red'":"") ?>>Employee: Krisjanis</a></li>
-                    <li><a href = "index.php?employee=0#graph" <?php echo($empl==0?"style='background-color:red'":"") ?>>Employee: Test employee</a></li>
+                    <li><a href = "index.php?employee=1#graph" <?php echo($empl==1?"style='background-color:#544d55;padding:10px;'":"") ?>>Employee: Richards</a></li>
+                    <li><a href = "index.php?employee=2#graph" <?php echo($empl==2?"style='background-color:#544d55;padding:10px;'":"") ?>>Employee: Krisjanis</a></li>
+                    <li><a href = "index.php?employee=0#graph" <?php echo($empl==0?"style='background-color:#544d55;padding:10px;'":"") ?>>Employee: Test employee</a></li>
                     </ul>
-                    <span><a href = "index.php?state=0#graph">S1</a> <a href = "index.php?state=1#graph">S2</a></span>
+                    <span>Demo sleep states:<a href = "index.php?state=0#graph">S1</a> <a href = "index.php?state=1#graph">S2</a> <a href = "index.php?state=2#graph">S3</a> <a href = "index.php?state=3#graph">S4</a> <a href = "index.php?state=4#graph">S5</a></span>
+
+                    <span>Demo activity states:<a href = "index.php?state=5#graph">A1</a> <a href = "index.php?state=6#graph">A2</a> <a href = "index.php?state=7#graph">A3</a></span>
                 </header>
 
                 <div class="box alt container">
