@@ -1,4 +1,3 @@
-$json = file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB');
 <!DOCTYPE HTML>
 <!--
     Directive by HTML5 UP
@@ -20,7 +19,7 @@ $json = file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7
             $empl = 0;
             $token = "OLF43KDW6KIJZQUIQYR6H3YL3L6WF5QB";
             if(isset($_GET['employee']) && !empty($_GET['employee'])){
-                $empl = a_to_i($_GET['employee']);
+                $empl = intval($_GET['employee']);
             }
             switch($empl){
                 case 1:
@@ -68,9 +67,9 @@ $json = file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7
                     etiam vivamus nunc nibh morbi.</p>
                     -->
                     <ul>
-                    <li><a href = "index.php?employee=1#graph" <?php ($emph==1?"style='color=red'":"") ?>>Employee: Richards</a></li>
-                    <li><a href = "index.php?employee=2#graph">Employee: Krisjanis</a></li>
-                    <li><a href = "index.php?employee=0#graph">Employee: Test employee</a></li>
+                    <li><a href = "index.php?employee=1#graph" <?php ($empl==1?"style='color=red'":"") ?>>Employee: Richards</a></li>
+                    <li><a href = "index.php?employee=2#graph" <?php ($empl==2?"style='color=red'":"") ?>>Employee: Krisjanis</a></li>
+                    <li><a href = "index.php?employee=0#graph" <?php ($empl==0?"style='color=red'":"") ?>>Employee: Test employee</a></li>
                     </ul>
                 </header>
 
