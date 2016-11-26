@@ -7,7 +7,7 @@ $password = preg_replace("/^.*Password=(.+?)$/", "\\1", $svalue);
 
 $username = "zzz";
 $password = "yield";
-$dbname = "state";
+$dbname = "zzz";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -15,7 +15,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT user FROM MyGuests";
+$sql = "SELECT user FROM state";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
