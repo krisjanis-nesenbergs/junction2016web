@@ -48,6 +48,14 @@
             if($empl>-1){
                 $sql = "UPDATE state SET user=".$empl;
                 $result = $conn->query($sql);
+            } else {
+                $sql = "SELECT user FROM state";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                    $row = $result->fetch_assoc();
+                    $empl = $row["user"];
+                }
+
             }
             if($stat>-1){
                 if($stat<5){
