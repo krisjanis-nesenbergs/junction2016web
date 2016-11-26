@@ -68,7 +68,7 @@ $json = file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7
                     etiam vivamus nunc nibh morbi.</p>
                     -->
                     <ul>
-                    <li><a href = "index.php?employee=1#graph" <?php ($emph==1?echo("style='color=red'"):echo("")) ?>>Employee: Richards</a></li>
+                    <li><a href = "index.php?employee=1#graph" <?php ($emph==1?"style='color=red'":"") ?>>Employee: Richards</a></li>
                     <li><a href = "index.php?employee=2#graph">Employee: Krisjanis</a></li>
                     <li><a href = "index.php?employee=0#graph">Employee: Test employee</a></li>
                     </ul>
