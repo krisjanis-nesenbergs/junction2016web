@@ -295,7 +295,7 @@
                     <p>
                     </p>
                     <ul class="actions">
-                        <li><a href="#conteact" class="button">Organize a Free demonstration!</a></li>
+                        <li><a href="#contact" class="button">Organize a Free demonstration!</a></li>
                     </ul>
                 </footer>
 
@@ -334,16 +334,8 @@
                         </div>
                     </form>
 
-                    <ul class="icons">
-                        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                        <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-                        <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-                    </ul>
-
                     <ul class="copyright">
-                        <li>&copy; <img src="images/zzzyield2png" style="size:40px;"/>. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        <li>&copy; <img src="images/zzzyield2.png" style="size:40px;"/>. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     </ul>
 
                 </div>
