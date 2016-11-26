@@ -4,8 +4,8 @@ var ZZZYield = {
     },
 
     graph: function(data){
-        var dates = [];
-        var sleep_data = [];
+        var dates = ["?"];
+        var sleep_data = ["0"];
         var datet = "";
         var scoret = "";
         for(i=0;i<data.sleep.sleep.length;i++){
@@ -19,7 +19,7 @@ var ZZZYield = {
                 sleep_data[ind] = (sleep_data[ind]+scoret);
             }
         }
-        var activity_data = [];
+        var activity_data = ["0"];
         for(i=0;i<data.activity.activity.length;i++){
             datet = data.activity.activity[i].summary_date;
             ind = dates.indexOf(datet);
