@@ -118,10 +118,10 @@
 
                 <div class="box alt container">
                     <section class="feature left">
-                        <a href="#" class="image icon fa-signal"><img src="images/pic01.jpg" alt="" /></a>
+                        <a href="#" class="image icon fa-signal"><img src="images/pic01.png" alt="" /></a>
                         <div class="content">
-                            <h3>The First Thing</h3>
-                            <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+                            <h3>First - measure</h3>
+                            <p>To detect the current state of the employees, <img src="images/zzzyield2.png" alt="zzzyield" style="width:30px;"/> relies on precise measurements of sleep patterns, activity levels and overall ability to work productively provided by <a href="https://ouraring.com/">ŌURA ring</a>.</p>
                         </div>
                     </section>
                     <section class="feature right">
