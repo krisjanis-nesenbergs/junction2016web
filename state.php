@@ -10,7 +10,7 @@ $password = preg_replace("/^.*Password=(.+?)$/", "\\1", $svalue);
 $username = "zzz";
 $password = "yield";
 $dbname = "zzz";
-echo "|".$ervername
+echo "|".$ervername;
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
