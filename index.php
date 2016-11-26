@@ -1,3 +1,4 @@
+$json = file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB');
 <!DOCTYPE HTML>
 <!--
     Directive by HTML5 UP
@@ -12,8 +13,27 @@
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="assets/css/main.css" />
         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <script src="zzzyield.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+        <script language="javascript">
+        <?php
+            $token = "CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB";
+        ?>
+            var data = {
+                sleep:<?php
+                    echo(file_get_contents('https://api.ouraring.com/v1/sleep?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB'));
+                ?>,
+                activity:<?php
+                    echo(file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB'));
+                ?>,
+                readiness:<?php
+                    echo(file_get_contents('https://api.ouraring.com/v1/readiness?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB'));
+                ?>
+            }
+            
+        </script>
     </head>
-    <body>
+    <body onload="ZZZYield.init(data)">
         <!-- Header -->
             <div id="header">
                 <span class="logo icon fa-paper-plane-o"></span>
@@ -25,17 +45,21 @@
 
         <!-- Main -->
             <div id="main">
-
+                <a name="graph"></a>
                 <header class="major container 75%">
-                    <h2>We conduct experiments that
+                    <h2>Is Your employee optimally productive?
                     <br />
-                    may or may not seriously
-                    <br />
-                    break the universe</h2>
+                    We can help!</h2>
+                     <canvas id="graph_container"></canvas>
                     <!--
                     <p>Tellus erat mauris ipsum fermentum<br />
                     etiam vivamus nunc nibh morbi.</p>
                     -->
+                    <ul>
+                    <li><a href = "index.html?employee=1#graph">Employee: Richards</a></li>
+                    <li><a href = "index.html?employee=2#graph">Employee: Krisjanis</a></li>
+                    <li><a href = "index.html?employee=3#graph">Employee: Test employee</a></li>
+                    </ul>
                 </header>
 
                 <div class="box alt container">
@@ -215,11 +239,6 @@
                     <h3>Get shady with science</h3>
                     <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
                     <p>
-<?php
-$json = file_get_contents('https://api.ouraring.com/v1/activity?access_token=CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB');
-$obj = json_decode($json);
-print_r($obj->activity);
-?>
                     </p>
                     <ul class="actions">
                         <li><a href="#" class="button" onclick="DemoData();">Get data</a></li>
@@ -283,6 +302,7 @@ print_r($obj->activity);
             <script src="assets/js/util.js"></script>
             <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
             <script src="assets/js/main.js"></script>
+            
 
     </body>
 </html>
