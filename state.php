@@ -1,6 +1,6 @@
 <?php
 $svalue = $_SERVER["MYSQLCONNSTR_localdb"];
-echo $value;
+echo $svalue;
 $servername = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $svalue);
 $dbname = preg_replace("/^.*Database=(.+?);.*$/", "\\1", $svalue);
 $username = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $svalue);
@@ -10,7 +10,7 @@ $password = preg_replace("/^.*Password=(.+?)$/", "\\1", $svalue);
 $username = "zzz";
 $password = "yield";
 $dbname = "zzz";
-echo "|".$ervername;
+echo "|".$servername;
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
