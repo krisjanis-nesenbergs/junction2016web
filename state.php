@@ -7,8 +7,8 @@ $username = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $svalue);
 $password = preg_replace("/^.*Password=(.+?)$/", "\\1", $svalue);
 
 
-$username = "zzz";
-$password = "yield";
+//$username = "zzz";
+//$password = "yield";
 $dbname = "zzz";
 echo "|".$servername;
 
