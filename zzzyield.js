@@ -4,7 +4,7 @@ var ZZZYield = {
     },
 
     graph: function(data){
-        var dates = ["?"];
+        var dates = ["Start date"];
         var sleep_data = ["0"];
         var datet = "";
         var scoret = "";
