@@ -29,6 +29,23 @@
                     $token = "CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB";
                     break;
             }
+            $svalue = $_SERVER["MYSQLCONNSTR_localdb"];
+            $servername = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $svalue);
+            $dbname = "zzz";
+            $username = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $svalue);
+            $password = preg_replace("/^.*Password=(.+?)$/", "\\1", $svalue);
+
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            } 
+
+            $sql = "UPDATE state SET user=".$empl;
+            $result = $conn->query($sql);
+            $conn->close();
+
+
         ?>
             var data = {
                 sleep:<?php
