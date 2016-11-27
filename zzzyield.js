@@ -13,7 +13,7 @@ var ZZZYield = {
         src = src.replace(/\\\//g, "/");
         img.src=src; 
         var pp = document.getElementById('deezer_p');
-        pp.innerHTML("Album title:"+dz.title+"<br/><a href='"+dz.link.replace(/\\\//g, "/")+"'>On Deezer</a>"); 
+        pp.innerHTML = "Album title:"+dz.title+"<br/><a href='"+dz.link.replace(/\\\//g, "/")+"'>On Deezer</a>"; 
 
 
     },
