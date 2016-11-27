@@ -5,13 +5,16 @@ var ZZZYield = {
     },
 
     deezer: function(deezer,uid){
-        var img = document.getElementById('graph_container');
+        var img = document.getElementById('deezer_img');
         var dz = deezer.a0;
         if(uid==1) dz = deezer.a1;
         if(iid==2) dz = deezer.a2;
         var src = dz.cover_medium;
         src = src.replace(/\\\//g, "/");
-        img.src=src;  
+        img.src=src; 
+        var pp = document.getElementById('deezer_p');
+        p.innerHTML("Album title:"+dz.title+"<br/><a href='"+dz.link..replace(/\\\//g, "/")+"'>On Deezer</a>"); 
+
 
     },
 
