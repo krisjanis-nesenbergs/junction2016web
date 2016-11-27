@@ -25,14 +25,7 @@
             if(isset($_GET['state']) && !empty($_GET['state'])){
                 $stat = intval($_GET['state']);
             }
-            switch($empl){
-                case 1:
-                    $token = "C6Q7SYJDDCTQW4DZ2OC6CKWFMIU3LQ7V";
-                    break;
-                case 2:
-                    $token = "CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB";
-                    break;
-            }
+
             $svalue = $_SERVER["MYSQLCONNSTR_localdb"];
             $servername = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $svalue);
             $dbname = "zzz";
@@ -69,7 +62,14 @@
             }
             $conn->close();
 
-
+            switch($empl){
+                case 1:
+                    $token = "C6Q7SYJDDCTQW4DZ2OC6CKWFMIU3LQ7V";
+                    break;
+                case 2:
+                    $token = "CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB";
+                    break;
+            }
         ?>
             var data = {
                 sleep:<?php
