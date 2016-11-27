@@ -83,6 +83,18 @@
                     echo(file_get_contents('https://api.ouraring.com/v1/readiness?access_token='.$token));
                 ?>
             }
+
+            var deezer = {
+                a0:<?php
+                    echo(file_get_contents('http://api.deezer.com/album/9410104'));
+                ?>,
+                a1:<?php
+                    echo(file_get_contents('http://api.deezer.com/album/12207938'));
+                ?>,
+                a2:<?php
+                    echo(file_get_contents('http://api.deezer.com/album/1132644'));
+                ?>
+            }
             
         </script>
     </head>
