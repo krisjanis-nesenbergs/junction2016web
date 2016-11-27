@@ -1,6 +1,18 @@
 var ZZZYield = {
-    init: function(data){
+    init: function(data,deezer,uid){
         this.graph(data);
+        this.deezer(deezer,uid);
+    },
+
+    deezer: function(deezer,uid){
+        var img = document.getElementById('graph_container');
+        var dz = deezer.a0;
+        if(uid==1) dz = deezer.a1;
+        if(iid==2) dz = deezer.a2;
+        var src = dz.cover_medium;
+        src = src.replace(/\\\//g, "/");
+        img.src=src;  
+
     },
 
     graph: function(data){

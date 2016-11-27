@@ -71,7 +71,11 @@
                     $token = "CT7NQBYLSVVUQ5N4NJ4CVVY7Q22DB7OB";
                     break;
             }
+
+
         ?>
+            var usr_id = <?php echo($empl) ?>;
+
             var data = {
                 sleep:<?php
                     echo(file_get_contents('https://api.ouraring.com/v1/sleep?access_token='.$token));
@@ -98,7 +102,7 @@
             
         </script>
     </head>
-    <body onload="ZZZYield.init(data)">
+    <body onload="ZZZYield.init(data,deezer,usr_id)">
         <!-- Header -->
             <div id="header">
                 <img src="images/zzzyield2.png" style="margin-top:8px;width:100px"/>
@@ -152,6 +156,14 @@
                             <p>If You are feeling fresh in the morning - great! If not - Your smart <a href="http://www.pauligshop.fi/fi_fi/paulig-muki">Paulig Muki</a> coffe mug will tell You how much coffee and excercise You need. If You require more sleep, then the workplace lights will dim, music will soothe You, and You will sip Your coffee and slip into a rejuvinating powernap. Everyone knows what a boost to productivity that is!</p>
                         </div>
                     </section>
+                    <section class="feature right">
+                        <a href="#" class="image icon fa-code"><img id="deezer_img" src="http://cdn-images.deezer.com/images/cover/d3854b9f5ff937b6da18f3c485485681/250x250-000000-80-0-0.jpg" alt="" /></a>
+                        <div class="content">
+                            <h3>Deezer integration</h3>
+                            <p>The seected user's favourite album info from Deezer. Also a playlist and now playing feature is in the works to provide the user the songs best used for waking up/work/going to sleep.</p>
+                            <p id="deezer_p"></p>
+                        </div>
+                    </section>                    
                 </div>
 
                 <!--
