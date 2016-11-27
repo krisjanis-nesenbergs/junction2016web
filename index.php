@@ -38,6 +38,7 @@
                 die("Connection failed: " . $conn->connect_error);
             } 
             $sql = "";
+            if($empl==10)$empl=0;
             if($empl>-1){
                 $sql = "UPDATE state SET user=".$empl;
                 $result = $conn->query($sql);
@@ -110,7 +111,7 @@
                     <ul>
                     <li><a href = "index.php?employee=1#graph" <?php echo($empl==1?"style='background-color:#544d55;padding:10px;'":"") ?>>Employee: Richards</a></li>
                     <li><a href = "index.php?employee=2#graph" <?php echo($empl==2?"style='background-color:#544d55;padding:10px;'":"") ?>>Employee: Krisjanis</a></li>
-                    <li><a href = "index.php?employee=0#graph" <?php echo($empl<1?"style='background-color:#544d55;padding:10px;'":"") ?>>Employee: Test employee</a></li>
+                    <li><a href = "index.php?employee=10#graph" <?php echo($empl<1?"style='background-color:#544d55;padding:10px;'":"") ?>>Employee: Test employee</a></li>
                     </ul>
                     <span>Demo sleep states:<a href = "index.php?state=10#graph">S1</a> <a href = "index.php?state=1#graph">S2</a> <a href = "index.php?state=2#graph">S3</a> <a href = "index.php?state=3#graph">S4</a> <a href = "index.php?state=4#graph">S5</a></span>
 
