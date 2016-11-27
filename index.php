@@ -157,7 +157,7 @@
                         </div>
                     </section>
                     <section class="feature right">
-                        <a href="#" class="image icon fa-code"><img id="deezer_img" src="http://cdn-images.deezer.com/images/cover/d3854b9f5ff937b6da18f3c485485681/250x250-000000-80-0-0.jpg" alt="" /></a>
+                        <img id="deezer_img" src="http://cdn-images.deezer.com/images/cover/d3854b9f5ff937b6da18f3c485485681/250x250-000000-80-0-0.jpg" alt="" />
                         <div class="content">
                             <h3>Deezer integration</h3>
                             <p>The seected user's favourite album info from Deezer. Also a playlist and now playing feature is in the works to provide the user the songs best used for waking up/work/going to sleep.</p>
