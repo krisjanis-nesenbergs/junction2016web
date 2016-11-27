@@ -8,7 +8,7 @@ var ZZZYield = {
         var img = document.getElementById('deezer_img');
         var dz = deezer.a0;
         if(uid==1) dz = deezer.a1;
-        if(iid==2) dz = deezer.a2;
+        if(uid==2) dz = deezer.a2;
         var src = dz.cover_medium;
         src = src.replace(/\\\//g, "/");
         img.src=src; 
