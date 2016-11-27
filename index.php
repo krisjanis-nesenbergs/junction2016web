@@ -44,7 +44,7 @@
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             } 
-
+            $sql = "";
             if($empl>-1){
                 $sql = "UPDATE state SET user=".$empl;
                 $result = $conn->query($sql);
